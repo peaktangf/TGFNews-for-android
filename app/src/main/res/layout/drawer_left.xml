@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/img_left_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_weight="0.8">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="3.2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCollect"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:drawableRight="@mipmap/icon_arr_left"
+            android:gravity="left"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:text="本地收藏"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/btnWeather"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:drawableRight="@mipmap/icon_arr_left"
+            android:gravity="left"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:text="天气城市"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:background="#00000000"/>
+
+
+        <LinearLayout
+            android:id="@+id/layoutWorld"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="字号设置"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/textView3" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小"
+                    android:textColor="@color/colorWhite"
+                    android:paddingRight="5dp"
+                    android:id="@+id/tvWorldSize"/>
+
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@mipmap/icon_arr_left"
+                    android:id="@+id/imageView"
+                    android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutNight"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜间模式"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/swichNight"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutChach"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="91.1MB"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tvChach"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:drawableRight="@mipmap/icon_arr_left"
+            android:gravity="left"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:text="关于看呀"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:background="#00000000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

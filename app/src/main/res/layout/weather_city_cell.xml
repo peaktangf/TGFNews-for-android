@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_location"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="14dp"
+        android:layout_alignBottom="@+id/tvCity"
+        android:layout_alignTop="@+id/tvCity"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/imgLocation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorNewsBodyText"
+        android:text="苏州市"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/imgLocation"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvCity"/>
+
+</RelativeLayout>

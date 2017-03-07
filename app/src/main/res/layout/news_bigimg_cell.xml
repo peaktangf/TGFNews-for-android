@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/colorNewsBodyText"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tvTitle"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="3"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_default"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/imgOne"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="新闻内容"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="10dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tvContent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

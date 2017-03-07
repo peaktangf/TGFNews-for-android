@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 内容界面 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorNavbar"
+                android:id="@+id/relativeNavBar">
+
+                <Button
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/btn_menu"
+                    android:id="@+id/btnLeft"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="看呀资讯"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/btn_weather"
+                    android:id="@+id/btnRight"
+                    android:layout_alignTop="@+id/btnLeft"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/relativeNavBar"
+                android:id="@+id/rcvMenu">
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rcvMenu"
+                android:id="@+id/vPagerNews">
+            </android.support.v4.view.ViewPager>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeNavBar"
+                android:id="@+id/fragmentWeather">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <!-- 侧滑菜单内容 -->
+        <LinearLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@mipmap/img_left_bg"
+            android:orientation="vertical">
+
+            <include layout="@layout/drawer_left"></include>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
+

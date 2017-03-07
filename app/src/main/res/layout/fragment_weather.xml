@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:alpha="0.85"
+    tools:context="com.project.tangaofeng.actionbar_demo.Fragment.WeatherFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            android:id="@+id/scrollView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="100dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorNavbar"
+                    android:text="0"
+                    android:id="@+id/tvTemp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorNavbar"
+                    android:text="°C"
+                    android:textSize="24dp"
+                    android:layout_alignTop="@+id/tvTemp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toRightOf="@+id/tvTemp"
+                    android:padding="5dp"
+                    android:id="@+id/tvTempUnit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0°C/0°C"
+                    android:layout_toRightOf="@+id/tvTemp"
+                    android:layout_alignBottom="@+id/tvTemp"
+                    android:layout_marginBottom="24dp"
+                    android:padding="5dp"
+                    android:id="@+id/tvHighAndLow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/tvTemp"
+                    android:textSize="16dp"
+                    android:text="某年某月"
+                    android:textColor="@color/colorNewsBodyText"
+                    android:id="@+id/tvDate"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvDate"
+                    android:layout_below="@+id/tvDate"
+                    android:textSize="16dp"
+                    android:text="PM 0"
+                    android:textColor="@color/colorNewsBodyText"
+                    android:id="@+id/tvPm"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/sun_mini"
+                    android:layout_alignTop="@+id/tvTempUnit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imgMark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未知"
+                    android:textColor="@color/colorNewsBodyText"
+                    android:layout_alignRight="@id/imgMark"
+                    android:layout_below="@id/imgMark"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvDesc"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/imgMark"
+                    android:layout_below="@id/tvDesc"
+                    android:text="火星"
+                    android:textColor="@color/colorNewsBodyText"
+                    android:id="@+id/tvCity"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvDesc"
+                    android:layout_alignRight="@+id/tvDesc"
+                    android:layout_alignBottom="@+id/tvCity"
+                    android:layout_alignTop="@+id/imgMark"
+                    android:background="@color/clearColor"
+                    android:id="@+id/switchCity"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvPm"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/recWeather">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/recWeather"
+                        android:textAlignment="center"
+                        android:padding="20dp"
+                        android:text="数据来自中国天气网"
+                        android:textColor="@color/colorNewsBodyText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

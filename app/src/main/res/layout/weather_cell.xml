@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:text="星期四"
+        android:textColor="@color/colorNewsBodyText"
+        android:id="@+id/tvWeek"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:text="06-30"
+        android:textColor="@color/colorNewsBodyText"
+        android:id="@+id/tvDate"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:text="阴"
+        android:textColor="@color/colorNewsBodyText"
+        android:id="@+id/tvDesc"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/btn_back"
+        android:id="@+id/imgMark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorNavbar"
+        android:layout_weight="1"
+        android:text="30°C"
+        android:id="@+id/tvHigh"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorNavbar"
+        android:layout_weight="1"
+        android:text="22°C"
+        android:id="@+id/tvLow"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="微风级"
+        android:textColor="@color/colorNewsBodyText"
+        android:id="@+id/tvWind"/>
+
+</LinearLayout>

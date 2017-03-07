@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.project.tangaofeng.actionbar_demo.Activity.NewsDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="44dp">
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/btn_back"
+            android:id="@+id/btnBack"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/webViewNews">
+
+    </WebView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@mipmap/btn_share"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/btnCollect"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnShare"/>
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@mipmap/btn_collect"
+            android:id="@+id/btnCollect"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnShare"
+            android:layout_toStartOf="@+id/btnShare" />
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@mipmap/btn_font"
+            android:id="@+id/btnFont"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnCollect"
+            android:layout_toStartOf="@+id/btnCollect" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/news_cell">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_default"
+            android:scaleType="fitXY"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:id="@+id/imgOne"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/colorNewsBodyText"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="文章那个表附件啊几时放假啊"
+            android:id="@+id/tvTitle"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="13dp"
+            android:textSize="12.5dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text="文反复的开始减肥的拉伸件法律的卡积分卡飞机上打开的开发健康"
+            android:id="@+id/tvContent"/>
+    </LinearLayout>
+
+</LinearLayout>
